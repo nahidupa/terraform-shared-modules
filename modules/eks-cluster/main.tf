@@ -10,7 +10,7 @@ provider "kubernetes" {
 
 
 module "eks_cluster" {
-      source          = "git::https://github.com/terraform-aws-modules/terraform-aws-eks.git?ref=tags/v12.0.0"
+      source          = "git::https://github.com/terraform-aws-modules/terraform-aws-eks.git?ref=tags/v12.1.0"
       
       cluster_name    = var.cluster_name
       
