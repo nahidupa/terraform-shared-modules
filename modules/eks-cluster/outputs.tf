@@ -18,3 +18,13 @@ output "cluster_id" {
   value       = module.eks_cluster.cluster_id
 }
 
+output "aws_eks_cluster_cluster_certificate_authority_data" {
+  description = "aws_eks_cluster_cluster_certificate_authority_data"
+  value       = data.aws_eks_cluster.cluster.certificate_authority.0.data
+}
+
+
+output "aws_eks_cluster_auth_cluster_token" {
+  description = "aws_eks_cluster_auth_cluster_token"
+  value       = data.aws_eks_cluster_auth.cluster.token
+}
